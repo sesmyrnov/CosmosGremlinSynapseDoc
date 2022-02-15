@@ -18,10 +18,11 @@ This article describes the functionalities that are currently supported in Azure
 
 ## Cosmos DB Gremlin API Analytical Store schema and datatypes
 
-Cosmos DB Gremlin API internally representing Cosmos DB documents based on GraphSON v2 schema using following format:
-[Cosmos Gremlin API back-end JSON](https://github.com/LuisBosquez/azure-cosmos-db-graph-working-guides/blob/master/graph-backend-json.md)  
+Cosmos DB Gremlin API internally representing Cosmos DB documents based on GraphSON v2 schema using [Gremlin Wire format](https://docs.microsoft.com/en-us/azure/cosmos-db/graph/gremlin-support#gremlin-wire-format).
 
-## Azure Synapse support
+Reference:[Cosmos Gremlin API back-end JSON](https://github.com/LuisBosquez/azure-cosmos-db-graph-working-guides/blob/master/graph-backend-json.md)  
+
+## Azure Synapse support for Cosmos Gremlin API
 
 There are two ways to access data from Azure Cosmos DB Gremlin API Analytical Store via Synapse Link:
 * Using SQL Serverless - use OPENROWSET to query Cosmos Gremlin API container and transorm nested JSON/array data to flatten Gremlin JSON document structure.
@@ -29,17 +30,20 @@ There are two ways to access data from Azure Cosmos DB Gremlin API Analytical St
  
 
 ## Example of writing Cosmos DB Gremlin API data using Synapse Spark pool
-
+Describe aproach and samples.
 
 ## Example of reading Cosmos DB Gremlin API data using Synapse Spark pool
-
+Describe aproach and samples.
 
 ## Example of using Spark Graph libraries to do analytics on Cosmos DB Gremlin API data using Synapse Spark pool
+Describe aproach and samples.
 
-
+## Example of reading Cosmos DB Gremlin API data using Synapse SQL Serverless
+Describe aproach and samples.
 
 ## Next steps
 
-* See how to [Learn how to query the Cosmos DB Analytical Store with SQL Serverless](/query-cosmos-db-analytical-store.md)
+* [Learn more on Cosmos Gremlin API wire protocol support](/gremlin-support.md)
+* [Learn how to query the Cosmos DB Analytical Store with SQL Serverless](/query-cosmos-db-analytical-store.md)
 * [Learn how to query the Cosmos DB Analytical Store with Spark 3](how-to-query-analytical-store-spark-3.md)
 * [Learn how to query the Cosmos DB Analytical Store with Spark 2](how-to-query-analytical-store-spark.md)
